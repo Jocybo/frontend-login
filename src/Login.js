@@ -50,10 +50,9 @@ function Login() {
                             onChange={formik.handleChange}
                             value={formik.values.password}
                         />
-                        <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-3 buttons">
-                            <input type={'submit'} className="btn btn-success" value={'Login'} />
-                            <input type={'submit'} className="btn btn-success ms-2" value={'SignIn'} onClick={() => navigate('/')}
-                            />
+                        <div className="col-lg-12 mt-3 buttons">
+                            <input type={'submit'} className="btn btn-primary small-but" value={'Login'} />
+                            <input type={'submit'} className="btn btn-primary small-but ms-2" value={'Sign Up'} onClick={() => navigate('/register')}/>
                         </div>
                     </div>
 

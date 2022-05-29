@@ -30,7 +30,7 @@ function Register() {
                         <img src={require('./assets/undraw_Mobile_login_re_9ntv.png')} className="img-fluid" />
                         <div className='fs-4 d-flex justify-content-center text-center'>ZustPe Payments Private Limited</div>
                     </div>
-                    <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 align-self-center box">
+                    <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 align-self-center">
                         <label>Name</label>
                         <input
                             type={'text'}
@@ -61,8 +61,8 @@ function Register() {
                             />
                         </div>
                         <div className="col-lg-12">
-                            <input type={'submit'} className="btn btn-success buttons mt-3" value="SingIn" />
-                            <input type={'submit'} className="btn btn-success ms-3 mt-3"  value={'LogIn'} onClick={() => navigate('/login')}/>
+                            <input type={'submit'} className="btn btn-primary buttons mt-3 small-but" value="Sing Up" /> 
+                            <input type={'submit'} className="btn btn-primary ms-3 mt-3 small-but"  value={'Login'} onClick={() => navigate('/')}/>
                         </div>
                     </div>
 
