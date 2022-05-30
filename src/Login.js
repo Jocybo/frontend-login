@@ -28,7 +28,7 @@ function Login() {
                 <div className="row">
                     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5">
                         <img src ={require('./assets/undraw_secure_login_pdn4.png')} className="img-fluid"/>
-                        <div className='fs-4 d-flex justify-content-center text-center'>ZustPe Payments Private Limited</div>
+                        <div className='fs-4 d-flex justify-content-center text-center'>Welcome to Our Brand</div>
                     </div>
                     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 align-self-center">
                         <label>Email</label>

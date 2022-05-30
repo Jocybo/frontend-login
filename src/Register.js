@@ -28,7 +28,7 @@ function Register() {
                 <div className="row">
                     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-5">
                         <img src={require('./assets/undraw_Mobile_login_re_9ntv.png')} className="img-fluid" />
-                        <div className='fs-4 d-flex justify-content-center text-center'>ZustPe Payments Private Limited</div>
+                        <div className='fs-4 d-flex justify-content-center text-center'>REGISTER HERE</div>
                     </div>
                     <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 align-self-center">
                         <label>Name</label>
