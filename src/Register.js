@@ -12,19 +12,19 @@ function Register() {
             email: '',
             password: '',
         },
-        // validate: (values) => {
-        //     const errors = {};
-        //     if (!values.name) {
-        //         errors.name = "Enter Your Name Here"
-        //     }
-        //     if (!values.email) {
-        //         errors.email = "Enter Your email ID"
-        //     }
-        //     if(!values.password){
-        //         errors.password = "Enter the Strong Passworf"
-        //     }
-        //     return errors;
-        // },
+        validate: (values) => {
+            const errors = {};
+            if (!values.name) {
+                errors.name = "Enter Your Name Here"
+            }
+            if (!values.email) {
+                errors.email = "Enter Your email ID"
+            }
+            if (!values.password) {
+                errors.password = "Enter the Strong Passworf"
+            }
+            return errors;
+        },
         onSubmit: async (values) => {
             try {
                 await axios.post('https://loginsec.herokuapp.com/register', values);
@@ -77,8 +77,8 @@ function Register() {
                             />
                         </div>
                         <div className="col-lg-12">
-                            <input type={'submit'} className="btn btn-primary buttons mt-3 small-but" value={'Sign Up'} /> 
-                            <input type={'submit'} className="btn btn-primary ms-3 mt-3 small-but"  value={'Login'} onClick={() => navigate('/')}/>
+                            <input type={'submit'} className="btn btn-primary buttons mt-3 small-but" value={'Sign Up'} />
+                            <input type={'submit'} className="btn btn-primary ms-3 mt-3 small-but" value={'Login'} onClick={() => navigate('/')} />
                         </div>
                     </div>
                 </div>
