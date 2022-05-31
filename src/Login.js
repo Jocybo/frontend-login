@@ -11,6 +11,16 @@ function Login() {
             email: '',
             password: '',
         },
+        validate: (values) => {
+            const errors = {};
+            if (!values.email) {
+                errors.email = "Credential's does not match"
+            }
+            if (!values.password) {
+                errors.password = "Enter the Strong Passworf"
+            }
+            return errors;
+        },
         onSubmit: async (values) => {
             try {
                 let loginData = await axios.post('https://loginsec.herokuapp.com/login', values);
@@ -41,6 +51,7 @@ function Login() {
                             value={formik.values.email}
                             required
                         />
+                        <span style={{color:"red"}}>{formik.errors.email}</span>
                         <label className='mt-2'>Password</label>
                         <input
                             type={'password'}
@@ -50,6 +61,7 @@ function Login() {
                             onChange={formik.handleChange}
                             value={formik.values.password}
                         />
+                        <span style={{color:"red"}}>{formik.errors.password}</span>
                         <div className="col-lg-12 mt-3 buttons">
                             <input type={'submit'} className="btn btn-primary small-but" value={'Login'} />
                             <input type={'submit'} className="btn btn-primary small-but ms-2" value={'Sign Up'} onClick={() => navigate('/register')}/>
