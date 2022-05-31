@@ -39,6 +39,7 @@ function Register() {
                             className="form-control"
                             onChange={formik.handleChange}
                             value={formik.values.name}
+                            required
                         />
                         <label>Email</label>
                         <input
@@ -48,6 +49,7 @@ function Register() {
                             className="form-control"
                             onChange={formik.handleChange}
                             value={formik.values.email}
+                            required
                         />
                         <div className="col-lg-12">
                             <label>Password</label>
@@ -58,6 +60,7 @@ function Register() {
                                 className="form-control"
                                 onChange={formik.handleChange}
                                 value={formik.values.password}
+                                required
                             />
                         </div>
                         <div className="col-lg-12">
@@ -65,7 +68,6 @@ function Register() {
                             <input type={'submit'} className="btn btn-primary ms-3 mt-3 small-but"  value={'Login'} onClick={() => navigate('/')}/>
                         </div>
                     </div>
-
                 </div>
             </form>
         </div>
