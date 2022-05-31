@@ -61,7 +61,7 @@ function Register() {
                             />
                         </div>
                         <div className="col-lg-12">
-                            <input type={'submit'} className="btn btn-primary buttons mt-3 small-but" value="Sing Up" /> 
+                            <input type={'submit'} className="btn btn-primary buttons mt-3 small-but" value="Sign Up"  onClick={() => navigate('/')}/> 
                             <input type={'submit'} className="btn btn-primary ms-3 mt-3 small-but"  value={'Login'} onClick={() => navigate('/')}/>
                         </div>
                     </div>
